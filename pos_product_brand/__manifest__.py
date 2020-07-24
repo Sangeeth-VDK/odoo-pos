@@ -19,7 +19,6 @@
 		'static/src/xml/pos_ticket_view.xml'],
 	'images': [],
 	'license': 'AGPL-3',
-	'installable': True,
 	'application': False,
 	'auto_install': False,
 }

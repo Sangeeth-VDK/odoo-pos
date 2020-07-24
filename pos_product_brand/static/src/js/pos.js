@@ -21,8 +21,7 @@ models.load_fields('product.product', ['product_brand']);
 models.Orderline = models.Orderline.extend({
 
  export_for_printing: function(){
-            console.log("cvbc",this.get_product().product_brand[1])
-
+           
 
         return {
             quantity:           this.get_quantity(),
@@ -30,8 +29,7 @@ models.Orderline = models.Orderline.extend({
             price:              this.get_unit_display_price(),
             discount:           this.get_discount(),
             product_name:       this.get_product().display_name,
-            product_brand:this.get_product().product_brand[1],
-
+	    product_brand:      this.get_product().product_brand[1],
             product_name_wrapped: this.generate_wrapped_product_name(),
             price_lst:          this.get_lst_price(),
             display_discount_policy:    this.display_discount_policy(),
