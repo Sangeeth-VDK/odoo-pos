@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+  <t t-extend="Orderline">
+       <t t-jquery=".product-name" t-operation="after">
+
+                       Brand:<t t-esc="line.get_product().product_brand[1]"/>
+<!--                        <t t-log="line.get_product().product_brand[1]"/>-->
+
+        </t>
+    </t>
+</templates>

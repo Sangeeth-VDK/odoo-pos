@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="product_pos_brand_form_view" model="ir.ui.view">
+        <field name="name">product.brand.form</field>
+        <field name="model">product.brand</field>
+        <field name="arch" type="xml">
+            <form string="Pos Product Brand">
+                <sheet>
+                    <group>
+                        <field name="brand_id" required="True"/>
+                        <field name="brand_name" placeholder="e.g. Panasonic" required="True"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

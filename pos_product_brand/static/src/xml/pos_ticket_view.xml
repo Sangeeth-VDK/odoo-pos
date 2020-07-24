@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-extend="OrderReceipt">
+            <t t-jquery="t[t-call*='OrderReceiptWrappedProductNameLines']" t-operation="after">
+               <div>
+                    <t t-if="line.product_brand">
+                        Brand:<t t-esc='line.product_brand'/>
+                    </t>
+               </div>
+           </t>
+    </t>
+
+</templates>
